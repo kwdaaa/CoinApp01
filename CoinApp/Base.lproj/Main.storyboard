@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-Sh-8wf">
+                                <rect key="frame" x="0.0" y="626" width="414" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="IRq-tx-dq6"/>
+                                    <constraint firstAttribute="height" constant="216" id="ov0-Y8-DeC"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tlx-CN-w1O">
+                                <rect key="frame" x="20" y="104" width="374" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-H9-vaG">
+                                        <rect key="frame" x="15" y="0.0" width="344" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLb-J2-Ofj">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="gib-Qp-nfi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWY-DR-19V">
+                                                <rect key="frame" x="75" y="0.0" width="194" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dg-jT-qFF">
+                                                <rect key="frame" x="269" y="0.0" width="75" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="Z89-NE-s5E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rWY-DR-19V" firstAttribute="leading" secondItem="tLb-J2-Ofj" secondAttribute="trailing" id="7TW-vc-JEG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Fk4-sr-oLj"/>
+                                    <constraint firstItem="LX0-H9-vaG" firstAttribute="leading" secondItem="Tlx-CN-w1O" secondAttribute="leading" constant="15" id="KoS-dL-5wS"/>
+                                    <constraint firstItem="LX0-H9-vaG" firstAttribute="top" secondItem="Tlx-CN-w1O" secondAttribute="top" id="cRe-By-p7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="LX0-H9-vaG" secondAttribute="trailing" constant="15" id="hsP-T6-O2j"/>
+                                    <constraint firstAttribute="bottom" secondItem="LX0-H9-vaG" secondAttribute="bottom" id="wMS-Sk-CE0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YRK-Sh-8wf" secondAttribute="bottom" constant="20" id="4gq-zJ-PGN"/>
+                            <constraint firstItem="Tlx-CN-w1O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fv3-iB-cU5"/>
+                            <constraint firstItem="Tlx-CN-w1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="SA9-b5-6e4"/>
+                            <constraint firstItem="Tlx-CN-w1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eyh-rF-wRg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tlx-CN-w1O" secondAttribute="trailing" constant="20" id="rMa-fa-00G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="rWY-DR-19V" id="bmG-AT-iS9"/>
+                        <outlet property="currencyLabel" destination="tLb-J2-Ofj" id="1Nm-5S-tOD"/>
+                        <outlet property="currencyPicker" destination="YRK-Sh-8wf" id="ExP-hK-3U3"/>
+                        <outlet property="worldLabel" destination="9dg-jT-qFF" id="cx5-0f-C9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
